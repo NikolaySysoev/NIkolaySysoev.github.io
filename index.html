@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Nikolay Sysoev</title>
+    <link rel="shortcut icon" href="./logo2.png" type="image/png">
+  </head>
+  <body>
+    <header class="header">
+      <img src="./642580355.jpeg" alt="avatar" class="header__avatar" />
+      <h1 class="header__title">Николай Сысоев</h1>
+      <h3 class="header__subtitle">QA engineer</h3>
+    </header>
+    <main>
+      <div>
+        <section class="greetings">
+          <h3 class="header__subtitle">Привет! Давайте знакомиться :) <br/> До COVID-19 я успел поработать на Ленинградской Атомной Электростанции, на газопроводе "Южный Поток" и космодроме Плесецк. <br/> А еще вешал жалюзи и работал менеджером по работе с клиентами в компании по ремонту ресторанного оборудования (в которой, кстати, вырос до руководителя отдела). <br/> А потом пришла пандемия. Локдаун внес свои корректировки, работы резко не стало и я понял что нужно что-то менять.<br/> Начал погружаться в IT - искать нишу, которую мог бы быстро освоить, и которая была бы мне интересна. Так я и оказался в Тестировании IT продуктов, чем и занимаюсь последние ~3.5 года :)   </h3>
+        </section>
+      </div>
+      <div class="info"> 
+        <div class="tools">
+          <h3 class="tools__header">Инструменты, которые я использую в работе</h3>
+        </div>
+        <section class="skills">
+          <span><b>WEB</b> <br/> Devtools & Charles</span>
+          <span><b>API</b> <br/> Postman & Swagger</span>
+          <span><b>SQL</b> <br/> PostgreSQL (via Metabase)</span>
+          <span><b>TMS</b> <br/> Zephyr & TestIT</span>
+          <span><b>LOGS</b> <br/> Kibana & Sentry</span>
+          <span><b>CHARTS</b> <br/> Grafana</span>
+        </section>
+      </div>
+      <div class="info"> 
+        <div class="tools">
+          <h3 class="tools__header">Доступен</h3>
+        </div>
+        <section class="skills">
+          <span><b>В Телеграмме</b> <br/> <a href="http://t.me/german_dolnikov">плейсхолдер</a></span>
+          <span><b>И по почте</b> <br/> <a href="https://qa.studio">плейсхолдер</a></span>
+        </section>
+        </div>
+    </main>
+    <footer>
+    <button onclick="showImage()">
+        Место где происходит магия тестирования
+    </button>
+    <script>
+        function showImage() {
+            let imageContainer =
+                document.createElement("div");
+            imageContainer.className =
+                "image-container";
+
+            let image =
+                document.createElement("img");
+            image.src =
+"./forest.jpg";
+            let closeButton =
+                document.createElement(
+                    "button"
+                );
+            closeButton.textContent = "Закрыть";
+            closeButton.className =
+                "close-btn";
+            closeButton.onclick =
+                function () {
+                    document.body.removeChild(
+                        imageContainer
+                    );
+                };
+
+            imageContainer.appendChild(
+                closeButton
+            );
+            imageContainer.appendChild(image);
+
+            document.body.appendChild(
+                imageContainer
+            );
+        }
+      </script>
+    </footer>
+  </body>
+</html>
